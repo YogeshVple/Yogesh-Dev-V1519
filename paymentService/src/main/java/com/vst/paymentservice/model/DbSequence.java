@@ -6,12 +6,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Document(collection = "db_sequence")
+@Document(collection = "payment_db_sequence")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class DbSequence {
-
+	
 	@Id
 	private String id;
 	private int seq;
