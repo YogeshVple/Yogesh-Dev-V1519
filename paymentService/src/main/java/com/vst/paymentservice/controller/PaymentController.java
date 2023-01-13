@@ -1,5 +1,7 @@
 package com.vst.paymentservice.controller;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,6 +29,7 @@ public class PaymentController {
 	payment.setPaymentId(sequenceService.getSequenceNumber(Payment.SEQUENCE_NAME));
 	//payment.setActive(true);
 	return paymentService.doPayment(payment);
-	
 	}
+	
+
 }
