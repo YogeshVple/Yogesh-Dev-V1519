@@ -39,8 +39,7 @@ public class DisplayQuery {
 				sort = "review_count";	
 		}
 		else
-			query.with(new Sort(Sort.Direction.ASC, 'name'));
-		
+			query.with(new Sort(Sort.Direction.ASC,));
 		
 		List<DisplayModel> result = mongoTemplate.find(query, DisplayModel.class, "docs");
 		return result;
