@@ -12,7 +12,6 @@ import com.vst.orderservice.service.SequenceGeneratorService;
 
 
 @RestController
-@RequestMapping
 public class OrderController {
 
 	
